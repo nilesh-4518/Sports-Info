@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scuba Diving</title>
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    color: #333;
+    min-height: 100%;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('s3.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px) brightness(1.2);
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* white transparent layer */
+    z-index: -1;
+  }
+
+  body {
+    padding: 30px;
+    z-index: 0;
+  }
+
+  h1, h2 {
+    color: #004085;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .tournament-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .tournament-table th, .tournament-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .tournament-table th {
+    background-color: rgba(233, 236, 239, 0.9);
+  }
+
+  .tournament-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .image-space {
+    flex: 0 0 100px;
+    height: 80px;
+    background-color: #dee2e6;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    font-size: 12px;
+  }
+
+  .tournament-details {
+    flex: 1;
+  }
+
+  .tournament-details h3 {
+    margin: 0 0 5px;
+    color: #0056b3;
+  }
+
+  .tournament-details p {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 768px) {
+    .tournament-row {
+      flex-direction: column;
+    }
+
+    .image-space {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #003d80;
+}
+
+  }
+</style>
+<a href="index.html">Home</a>
+
+</head>
+<body>
+
+  <h1>🤿 Scuba Diving</h1>
+
+  <div class="section">
+    <h2>🌍 International Activities & Events</h2>
+
+    <div class="tournament-row">
+     <img src="cams.jpeg"height="120"width="100">
+      <div class="tournament-details">
+        <h3>CMAS World Underwater Federation Events</h3>
+        <p><strong>Type:</strong> Technical, freediving, and underwater sports competitions</p>
+        <p><strong>Organizer:</strong> CMAS (World Underwater Federation)</p>
+        <p><strong>Frequency:</strong> Annual/Biennial</p>
+        <p><strong>Description:</strong> Includes competitive underwater disciplines like orientation, photography, and apnea diving, often associated with scuba training organizations.</p>
+      </div>
+    </div>
+
+    <div class="tournament-row">
+      <img src="dive.jpg"height="120"width="100">
+      <div class="tournament-details">
+        <h3>Recreational Dive Festivals (e.g., ADEX, DEMA)</h3>
+        <p><strong>Type:</strong> Expos, meetups, and environmental events</p>
+        <p><strong>Organizer:</strong> Regional diving communities & international federations</p>
+        <p><strong>Frequency:</strong> Annual</p>
+        <p><strong>Description:</strong> While not competitive, these major events bring divers together for marine conservation, underwater photography contests, and diving innovation showcases.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🇮🇳 Scuba Diving in India</h2>
+
+    <div class="tournament-row">
+     <img src="dive fest.jpeg"height="120"weight="100">
+      <div class="tournament-details">
+        <h3>India Dive Fest (Goa)</h3>
+        <p><strong>Type:</strong> Recreational and awareness event</p>
+        <p><strong>Organizer:</strong> Local dive shops and tourism boards</p>
+        <p><strong>Frequency:</strong> Annual (varies)</p>
+        <p><strong>Description:</strong> One of India's few open diving fests aimed at promoting scuba diving in coastal regions like Goa, with workshops and guided dives.</p>
+      </div>
+    </div>
+
+    <div class="tournament-row">
+     <img src="pedi.jpeg"height="120"width="100">
+      <div class="tournament-details">
+        <h3>PADI India – Dive Against Debris Events</h3>
+        <p><strong>Type:</strong> Conservation-focused dives</p>
+        <p><strong>Organizer:</strong> PADI Dive Centers across India</p>
+        <p><strong>Frequency:</strong> Throughout the year</p>
+        <p><strong>Description:</strong> These events gather divers for marine cleanup drives, increasing awareness and engagement with local dive communities in places like the Andamans and Pondicherry.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

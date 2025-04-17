@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kabaddi Tournaments</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    color: #333;
+    min-height: 100%;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('s8.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px) brightness(1.2);
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* white transparent layer */
+    z-index: -1;
+  }
+
+  body {
+    padding: 30px;
+    z-index: 0;
+  }
+
+  h1, h2 {
+    color: #004085;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .tournament-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .tournament-table th, .tournament-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .tournament-table th {
+    background-color: rgba(233, 236, 239, 0.9);
+  }
+
+  .tournament-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .image-space {
+    flex: 0 0 100px;
+    height: 80px;
+    background-color: #dee2e6;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    font-size: 12px;
+  }
+
+  .tournament-details {
+    flex: 1;
+  }
+
+  .tournament-details h3 {
+    margin: 0 0 5px;
+    color: #0056b3;
+  }
+
+  .tournament-details p {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 768px) {
+    .tournament-row {
+      flex-direction: column;
+    }
+
+    .image-space {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+ .home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #003d80;
+}
+
+  }
+</style>
+<a href="index.html">Home</a>
+
+
+</head>
+<body>
+
+  <h1>🤼 Kabaddi Tournaments</h1>
+
+  <div class="section">
+    <h2>🌍 International Tournaments</h2>
+
+    <div class="tournament-row">
+     <img src="kabaddi.WEBP"height="120"width="100">
+      <div class="tournament-details">
+        <h3>Kabaddi World Cup</h3>
+        <p><strong>Format:</strong> Standard style</p>
+        <p><strong>Frequency:</strong> Irregular (Last: 2016)</p>
+        <p><strong>Organizer:</strong> International Kabaddi Federation (IKF)</p>
+        <p><strong>Description:</strong> Global competition featuring national teams from around the world. India has been dominant historically.</p>
+      </div>
+    </div>
+
+    <div class="tournament-row">
+      <img src="ka.JPEG"height="120"width="100">
+      <div class="tournament-details">
+        <h3>Asian Games Kabaddi</h3>
+        <p><strong>Format:</strong> Standard style</p>
+        <p><strong>Frequency:</strong> Every 4 years</p>
+        <p><strong>Organizer:</strong> Olympic Council of Asia</p>
+        <p><strong>Description:</strong> Prestigious tournament for Asian nations. Kabaddi has been part of the Games since 1990.</p>
+      </div>
+    </div>
+
+    <div class="tournament-row">
+      <img src="south.JPG"height="120"width="100">
+      <div class="tournament-details">
+        <h3>South Asian Games Kabaddi</h3>
+        <p><strong>Format:</strong> Standard style</p>
+        <p><strong>Frequency:</strong> Every 2–4 years</p>
+        <p><strong>Organizer:</strong> South Asian Olympic Council</p>
+        <p><strong>Description:</strong> Regional competition among South Asian nations, including India, Pakistan, Bangladesh, Nepal, etc.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🇮🇳 National / Franchise Leagues</h2>
+
+    <div class="tournament-row">
+      <img src="prok.WEBP"height="160"width="100">
+      <div class="tournament-details">
+        <h3>Pro Kabaddi League (PKL)</h3>
+        <p><strong>Country:</strong> India</p>
+        <p><strong>Format:</strong> Franchise-based, Standard style</p>
+        <p><strong>Season:</strong> Annually (typically July–Dec)</p>
+        <p><strong>Organizer:</strong> Mashal Sports & Disney Star</p>
+        <p><strong>Description:</strong> Highly popular televised league with teams representing Indian cities; revolutionized kabaddi’s popularity.</p>
+      </div>
+    </div>
+
+    <div class="tournament-row">
+      <img src="senior.AVIF"height="160"width="100">
+      <div class="tournament-details">
+        <h3>Senior National Kabaddi Championship</h3>
+        <p><strong>Country:</strong> India</p>
+        <p><strong>Format:</strong> Inter-state, Inter-services teams</p>
+        <p><strong>Frequency:</strong> Annual</p>
+        <p><strong>Organizer:</strong> Amateur Kabaddi Federation of India (AKFI)</p>
+        <p><strong>Description:</strong> The oldest and most prestigious domestic tournament, features top kabaddi players across Indian states and sectors.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

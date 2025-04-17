@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Info Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0; 
+    }
+
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem; 
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem; 
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center; 
+    }
+
+    .options a {
+      display: block;               /* Stack vertically */
+      margin: 1rem auto;            /* Centered with margin */
+      padding: 1rem 2rem; 
+      background: #007BFF;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      max-width: 300px;             /* Optional: sets a fixed button width */
+    }
+
+    .options a:hover {
+      background: #0056b3;
+      transition: background 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Sports Info Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="developers.html">Developers</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Select a Sport Category</h2>
+    <div class="options">
+      <a href="ground.html">Ground Sports</a>
+      <a href="water.html">Water Sports</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sports Info Hub</p>
+  </footer>
+</body>
+</html>
